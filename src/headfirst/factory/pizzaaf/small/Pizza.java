@@ -8,6 +8,7 @@ public abstract class Pizza {
   Dough dough;
   String sauce;
   Cheese cheese;
+  Potato potato;
   ArrayList<String> toppings = new ArrayList<String>();
   
   /*public void prepare() {
@@ -16,7 +17,7 @@ public abstract class Pizza {
     System.out.println("Adding sauce...");
     System.out.println("Adding toppings: ");
   }*/
-  abstract void prepare();
+  protected abstract void prepare();  // protect없으면(private) child가 못써 (protect;패밀리는 쓸수있는거)
   
   
   public void bake() {
